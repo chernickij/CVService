@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.1.xsd
+      http://www.liquibase.org/xml/ns/pro
+      http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd"
+        logicalFilePath="./changelog/v.1.0.0">
+
+    <changeSet id="table-direction" author="Daniil Chernickij">
+        <sqlFile encoding="utf8" path="./sql/01.create-direction-table.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+
+    <changeSet id="table-test" author="Daniil Chernickij">
+        <sqlFile encoding="utf8" path="./sql/02.create-test-table.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+
+    <changeSet id="table-direction_test" author="Daniil Chernickij">
+        <sqlFile encoding="utf8" path="./sql/03.create-direction_test-table.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+
+    <changeSet id="table-candidate" author="Daniil Chernickij">
+        <sqlFile encoding="utf8" path="./sql/04.create-candidate-table.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+
+    <changeSet id="table-direction_candidate" author="Daniil Chernickij">
+        <sqlFile encoding="utf8" path="./sql/05.create-direction_candidate-table.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+
+    <changeSet id="table-candidate_result" author="Daniil Chernickij">
+        <sqlFile encoding="utf8" path="./sql/06.create-candidate_result-table.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+
+<!--    <changeSet id="insert-initial-data" author="Daniil Chernickij">-->
+<!--        <sqlFile encoding="utf8" path="./sql/07.insert-initial-data.sql" relativeToChangelogFile="true"/>-->
+<!--    </changeSet>-->
+
+</databaseChangeLog>

@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  postgres:
+    container_name: "postgresDB"
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_DB: CVService
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - "CVService"
+
+networks:
+  CVService:
+    driver: "bridge"
