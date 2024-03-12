@@ -21,9 +21,9 @@ spring:
 
 file-storage:
   directory:
-    root-path: fileStorage
-    image: /images
-    cv: /CVs
+    root-path: C:\Local disk\CVService\fileStorage
+    image: \images
+    cv: \CVs
 
 server:
   port: '8080'

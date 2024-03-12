@@ -23,7 +23,7 @@ public class CandidateResult extends AbstractEntity {
     private Long id;
 
     @NotNull
-    @Column(name = "ts_created", nullable = false)
+    @Column(name = "date", nullable = false)
     private Date date;
 
     @NotNull

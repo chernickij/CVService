@@ -34,6 +34,12 @@ public class Candidate extends AbstractEntity {
     @Column(name = "patronymic", nullable = false)
     private String patronymic;
 
+    @Column(name = "cv_file")
+    private String cvFile;
+
+    @Column(name = "photo_file")
+    private String photoFile;
+
     @NotNull
     @Column(name = "description", nullable = false)
     private String description;
