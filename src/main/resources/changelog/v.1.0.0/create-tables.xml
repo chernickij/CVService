@@ -33,8 +33,8 @@
         <sqlFile encoding="utf8" path="./sql/06.create-candidate_result-table.sql" relativeToChangelogFile="true"/>
     </changeSet>
 
-<!--    <changeSet id="insert-initial-data" author="Daniil Chernickij">-->
-<!--        <sqlFile encoding="utf8" path="./sql/07.insert-initial-data.sql" relativeToChangelogFile="true"/>-->
-<!--    </changeSet>-->
+    <changeSet id="insert-initial-data" author="Daniil Chernickij">
+        <sqlFile encoding="utf8" path="./sql/07.insert-initial-data.sql" relativeToChangelogFile="true"/>
+    </changeSet>
 
 </databaseChangeLog>
