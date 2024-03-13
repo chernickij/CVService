@@ -21,7 +21,7 @@ spring:
 
 file-storage:
   directory:
-    root-path: C:\Local disk\CVService\fileStorage
+    root-path: CVService\fileStorage
     image: \images
     cv: \CVs
 

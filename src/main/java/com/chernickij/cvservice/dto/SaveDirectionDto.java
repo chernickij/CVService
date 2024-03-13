@@ -1,5 +1,6 @@
 package com.chernickij.cvservice.dto;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,7 +12,10 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 @NoArgsConstructor
 @AllArgsConstructor
+@Schema(description = "Direction data for creating or updating")
 public class SaveDirectionDto {
+    @Schema(description = "Direction name")
     private String name;
+    @Schema(description = "Direction description")
     private String description;
 }
